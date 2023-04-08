@@ -83,8 +83,14 @@ ul li a:hover::after {
 
 .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.buttons p {
+  margin: 10px 5px;
+  text-align: center;
 }
 
 .btn {
@@ -99,6 +105,12 @@ ul li a:hover::after {
 .btn:hover {
   background: #a40016;
   color: white;
+}
+
+.btn-msg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .social-links {
