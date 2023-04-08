@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background: #a40016;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  transition: .5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  margin-top: 25px;
+  height: 350px;
+}
+
+.left-column, .right-column {
+  flex-basis: 50%;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.right-column {
+  display: flex;
+  background-image: url("images/rick-roll-rick-rolled.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.rick-roll {
+  text-decoration: none;
+  color: black;
+  background: burlywood;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.rick-roll:hover span {
+  display: none
+}
+
+.rick-roll:hover:before {
+  content: "Not "
+}
